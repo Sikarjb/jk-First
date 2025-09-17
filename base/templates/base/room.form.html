@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>First</title>
+    </head>
+    {% block content %}
+    <body>
+        {% extends 'main.html' %}
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Start</button>
+            <button type="reset">End</button>
+        </form>
+    </body>
+    {% endblock content %}
+</html>
+
+
+
+
+
+
+
